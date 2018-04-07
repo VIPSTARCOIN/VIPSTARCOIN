@@ -3961,7 +3961,7 @@
     </message>
     <message>
         <source>Sender Address</source>
-        <translation type="unfinished">トークン送り先</translation>
+        <translation type="unfinished">送信者アドレス</translation>
     </message>
     <message>
         <source>Solidity</source>
