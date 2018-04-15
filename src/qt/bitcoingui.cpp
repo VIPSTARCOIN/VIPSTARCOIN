@@ -63,6 +63,7 @@
 #include <QVBoxLayout>
 #include <QDockWidget>
 #include <QSizeGrip>
+#include <QFileInfo>
 
 #if QT_VERSION < 0x050000
 #include <QTextDocument>
@@ -214,7 +215,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
     // Status bar notification icons
     QFrame *frameBlocks = new QFrame();
     frameBlocks->setContentsMargins(0,0,0,0);
-    frameBlocks->setStyleSheet("background-color: #EEEEEE");
+
     frameBlocks->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
     frameBlocksLayout->setContentsMargins(3,0,0,0);
@@ -289,8 +290,11 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *
         connect(progressBar, SIGNAL(clicked(QPoint)), this, SLOT(showModalOverlay()));
     }
 #endif
+
     setStyleSheet("QMainWindow::separator { width: 1px; height: 1px; margin: 0px; padding: 0px; background-color:#e8e8e8;}");
-    setStyleSheet("QMainWindow {background-image: url(background.jpg);}");
+    QFileInfo fileInfo("background.jpg");
+    if(fileInfo.exists())
+        setStyleSheet("QMainWindow {background-image: url(background.jpg);}");
 }
 
 BitcoinGUI::~BitcoinGUI()
