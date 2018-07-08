@@ -1381,7 +1381,7 @@ CAmount GetProofOfStakeReward(int nHeight, const Consensus::Params& consensusPar
     if (halvings >= 128)
         return 0;
     nSubsidy >>= halvings;
-    if (nSubsidy < 100)
+    if (nSubsidy < 100 * COIN)
         return 100 * COIN;
     return nSubsidy;
 }
