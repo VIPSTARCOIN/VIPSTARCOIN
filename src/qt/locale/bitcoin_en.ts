@@ -3918,7 +3918,7 @@
     </message>
     <message>
         <location line="+12"/>
-        <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
+        <source>Distributed under the GPLv3 license, see the %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
