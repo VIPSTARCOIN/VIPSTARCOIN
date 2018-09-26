@@ -190,6 +190,7 @@ public:
             boost::assign::map_list_of
             ( 0, uint256S("0000d068e1d30f79fb64446137106be9c6ee69a6a722295c131506b1ee09b77c"))
             ( 1000, uint256S("0000966ea0fed775d527fb31902270f01cafdfe53403be884080e2203bd43c74"))
+            ( 244000, uint256S("0000000000261d023630c17c99b686bc251eca6e044c75191d83d7f35cff530d"))
         };
 
         chainTxData = ChainTxData{
