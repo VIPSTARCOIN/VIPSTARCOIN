@@ -258,6 +258,34 @@
         <translation>取引(&amp;T)</translation>
     </message>
     <message>
+        <source>Smart &amp;Contract</source>
+        <translation>スマートコントラクト(&amp;C)</translation>
+    </message>
+    <message>
+        <source>Smart contract</source>
+        <translation>スマートコントラクトの作成や送信、呼出が出来ます。</translation>
+    </message>
+    <message>
+        <source>Create</source>
+        <translation>作成</translation>
+    </message>
+    <message>
+        <source>SendTo</source>
+        <translation>送信</translation>
+    </message>
+    <message>
+        <source>Call</source>
+        <translation>呼出</translation>
+    </message>
+    <message>
+        <source>&amp;VRC Token</source>
+        <translation>VRCトークン(&amp;V)</translation>
+    </message>
+    <message>
+        <source>VRC Token (send, receive or add Token in list)</source>
+        <translation>VRCトークンの送信や受信、トークンの追加が出来ます。</translation>
+    </message>
+    <message>
         <source>Browse transaction history</source>
         <translation>取引履歴を閲覧</translation>
     </message>
@@ -300,6 +328,10 @@
     <message>
         <source>&amp;Backup Wallet...</source>
         <translation>ウォレットのバックアップ... (&amp;B)</translation>
+    </message>
+    <message>
+        <source>&amp;Restore Wallet...</source>
+        <translation>ウォレットの復元... (&amp;R)</translation>
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
@@ -540,12 +572,40 @@
         <translation>HD鍵生成は&lt;b&gt;無効化&lt;/b&gt;されています</translation>
     </message>
     <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked for staking only&lt;/b&gt;</source>
+        <translation>ウォレットは &lt;b&gt;暗号化されて、現在ステークのみアンロックされています&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>ウォレットは&lt;b&gt;暗号化されて、アンロックされています&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>ウォレットは&lt;b&gt;暗号化されて、ロックされています&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
+        <translation>ステーク中です。&lt;br&gt;あなたのウェイトは %1 です&lt;br&gt;ネットワークウェイトは %2 です&lt;br&gt;報酬を得るための予想期間は %3 です</translation>
+    </message>
+    <message>
+        <source>Not staking because wallet is offline</source>
+        <translation>ウォレットがオフラインのため、ステークしていません</translation>
+    </message>
+    <message>
+        <source>Not staking because wallet is syncing</source>
+        <translation>ウォレットが同期中のため、ステークしていません</translation>
+    </message>
+    <message>
+        <source>Not staking because you don't have mature coins</source>
+        <translation>成熟したコインを持っていないか、数量が足りないため、ステークしていません</translation>
+    </message>
+    <message>
+        <source>Not staking because wallet is locked</source>
+        <translation>ウォレットがロックされているため、ステークしていません</translation>
+    </message>
+    <message>
+        <source>Not staking</source>
+        <translation>ステークしていません</translation>
     </message>
     <message>
         <source>A fatal error occurred. VIPSTARCOIN can no longer continue safely and will quit.</source>
@@ -770,7 +830,7 @@
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>ディレクトリがもうあります。 新しいのディレクトリを作るつもりなら%1を書いてください。</translation>
+        <translation>ディレクトリが既に存在します。 新しいのディレクトリを作るつもりなら%1を書いてください。</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
@@ -1012,6 +1072,14 @@
         <translation>上のオプションを置き換えることのできる、有効なコマンドラインオプションの一覧:</translation>
     </message>
     <message>
+        <source>Open the %1 configuration file from the working directory.</source>
+        <translation>作業ディレクトリから %1 設定ファイルを開く。</translation>
+    </message>
+    <message>
+        <source>Open Configuration File</source>
+        <translation>設定ファイルを開く</translation>
+    </message>
+    <message>
         <source>Reset all client options to default.</source>
         <translation>すべてのオプションを初期値に戻します。</translation>
     </message>
@@ -1180,6 +1248,22 @@
         <translation>クライアントを終了します。続行してもよろしいですか？</translation>
     </message>
     <message>
+        <source>Configuration options</source>
+        <translation type="unfinished">設定オプション</translation>
+    </message>
+    <message>
+        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
+        <translation type="unfinished">設定ファイルは、GUI設定に優先する高度なユーザーオプションを指定するために使用されます。さらに、この構成ファイルは、どのコマンドラインオプションよりも優先されます。</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">エラー</translation>
+    </message>
+    <message>
+        <source>The configuration file could not be opened.</source>
+        <translation type="unfinished">設定ファイルを開くことができませんでした。</translation>
+    </message>
+    <message>
         <source>This change would require a client restart.</source>
         <translation>この変更はクライアントの再起動が必要です。</translation>
     </message>
@@ -1190,12 +1274,12 @@
     <message>
         <location line="+124"/>
         <source>Reserved amount does not participate is staking and is therefore spendable at any time.</source>
-        <translation>貯金はStakeに参加しないため、いつでも支出できる</translation>
+        <translation>貯金はステークされないため、いつでも支出できます</translation>
     </message>
     <message>
         <location line="+125"/>
         <source>Reserve</source>
-        <translation>貯金</translation>
+        <translation>貯金(ステークされないVIPS)</translation>
     </message>
     <message>
         <source>Enable &amp;zero balance for receiver token address</source>
@@ -1280,6 +1364,34 @@
         <source>Current total balance in watch-only addresses</source>
         <translation>監視限定アドレス内の現在の全残高</translation>
     </message>
+    <message>
+        <source>Other Tokens</source>
+        <translation>全てのトークン</translation>
+    </message>
+    <message>
+        <source>RecentTransactions</source>
+        <translation>最近のトランザクション</translation>
+    </message>
+    <message>
+        <source>Total:        </source>
+        <translation>合計:        </translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>データ</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>タイプ</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>ラベル</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>数量(VIPS)</translation>
+    </message>
 </context>
 <context>
     <name>PaymentServer</name>
@@ -1349,7 +1461,7 @@
     </message>
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>支払リクエスト %1 は大きすぎます（%2バイトですが、%3バイトまでが許されています）。</translation>
+        <translation>支払リクエスト %1 は大きすぎます（%3バイトまでが可能ですが、このリクエストは%2バイトです）。</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
@@ -1460,6 +1572,10 @@
     <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 はまだ安全に終了していません...</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
@@ -1881,6 +1997,10 @@
         <source>Copy amount</source>
         <translation>総額のコピー</translation>
     </message>
+    <message>
+        <source>Request data</source>
+        <translation>リクエストデータ</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -1930,7 +2050,7 @@
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>URI が長くなり過ぎます。ラベルやメッセージのテキストを短くしてください。</translation>
+        <translation>URI が長過ぎます。ラベルやメッセージのテキストを短くしてください。</translation>
     </message>
     <message>
         <source>Error encoding URI into QR Code.</source>
@@ -2059,12 +2179,12 @@
         <translation>（ツールチップをお読みください）</translation>
     </message>
     <message>
-        <source>Recommended:</source>
-        <translation>推奨：</translation>
+        <source>Recommended</source>
+        <translation>推奨</translation>
     </message>
     <message>
-        <source>Custom:</source>
-        <translation>カスタム：</translation>
+        <source>Custom</source>
+        <translation>カスタム</translation>
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
@@ -2233,6 +2353,10 @@
     <message>
         <source>(no label)</source>
         <translation>（ラベル無し）</translation>
+    </message>
+    <message>
+        <source>Recipients</source>
+        <translation>受取人</translation>
     </message>
 </context>
 <context>
@@ -2735,15 +2859,15 @@
     </message>
     <message>
         <source>Received with</source>
-        <translation>送り主</translation>
+        <translation>着金</translation>
     </message>
     <message>
         <source>Received from</source>
-        <translation>送り主</translation>
+        <translation>着金</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>送り先</translation>
+        <translation>送金</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -2752,6 +2876,14 @@
     <message>
         <source>Mined</source>
         <translation>発掘した</translation>
+    </message>
+    <message>
+        <source>Contract receive</source>
+        <translation>コントラクト受信</translation>
+    </message>
+    <message>
+        <source>Contract send</source>
+        <translation>コントラクト送信</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -2822,15 +2954,23 @@
     </message>
     <message>
         <source>Received with</source>
-        <translation>送り主</translation>
+        <translation>着金</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>送り先</translation>
+        <translation>送金</translation>
     </message>
     <message>
         <source>To yourself</source>
         <translation>自分自身</translation>
+    </message>
+    <message>
+        <source>Contract Receive</source>
+        <translation>コントラクト受信</translation>
+    </message>
+    <message>
+        <source>Contract Send</source>
+        <translation>コントラクト送信</translation>
     </message>
     <message>
         <source>Mined</source>
@@ -3073,11 +3213,11 @@
     </message>
     <message>
         <source>VIPSTARCOIN Core</source>
-        <translation>VIPSTARCOIN のコア</translation>
+        <translation>VIPSTARCOIN Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
-        <translation>%s の開発者</translation>
+        <translation>The %s developers</translation>
     </message>
     <message>
         <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
@@ -3302,7 +3442,7 @@
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>ポートのリスンに失敗しました。必要であれば -listen=0 を使用してください。</translation>
+        <translation>ポートのリッスンに失敗しました。必要であれば -listen=0 を使用してください。</translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -3366,11 +3506,11 @@
     </message>
     <message>
         <source>Rebuild chain state and block index from the blk*.dat files on disk</source>
-        <translation>チェイン状態およびブロックインデックスをディスク上の blk*.dat ファイルから再構築する</translation>
+        <translation>チェーン状態およびブロックインデックスをディスク上の blk*.dat ファイルから再構築する</translation>
     </message>
     <message>
         <source>Rebuild chain state from the currently indexed blocks</source>
-        <translation>既にインデックスされたブロックからチェイン状態を再構築する</translation>
+        <translation>既にインデックスされたブロックからチェーン状態を再構築する</translation>
     </message>
     <message>
         <source>Rewinding blocks...</source>
@@ -3430,7 +3570,7 @@
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
-        <translation>財布 %s はデータ・ディレクトリ%sの外にあります</translation>
+        <translation>ウォレット %s はデータ・ディレクトリ%sの外にあります</translation>
     </message>
     <message>
         <source>Wallet debugging/testing options:</source>
@@ -3438,7 +3578,7 @@
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart %s to complete</source>
-        <translation>ウォレットが書き直される必要がありました: 完了するために %s を再起動します</translation>
+        <translation>ウォレットを書き直す必要があります: 完了するために %s を再起動します</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -3466,11 +3606,11 @@
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>エラー: 内向きの接続をリッスンするのに失敗しました (エラー %s が返却されました)</translation>
+        <translation>エラー: 内向きの接続をリッスンするのに失敗しました (エラー %s が返されました)</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>関連のアラートをもらってもすごく長いのフォークを見てもコマンドを実行 (コマンドの中にあるの%sはメッセージから置き換えさせる)</translation>
+        <translation>関連のアラートをもらっても、すごく長いフォークを見ても、コマンドを実行 (コマンドの中にあるの%sはメッセージから置き換えさせる)</translation>
     </message>
     <message>
         <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
@@ -3593,6 +3733,21 @@
         <translation>取引の署名に失敗しました</translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Specified -walletdir &quot;%s&quot; does not exist</source>
+        <translation>指定された-walletdir &quot;%s&quot; は存在しません</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specified -walletdir &quot;%s&quot; is a relative path</source>
+        <translation>指定された-walletdir &quot;%s&quot; は相対パスです</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Specified -walletdir &quot;%s&quot; is not a directory</source>
+        <translation>指定された-walletdir &quot;%s&quot; はディレクトリではありません</translation>
+    </message>
+    <message>
         <source>The transaction amount is too small to pay the fee</source>
         <translation>トランザクションの金額が小さすぎて手数料を支払えません</translation>
     </message>
@@ -3623,6 +3778,18 @@
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>このコンピュータの %s にバインドすることができません (バインドが返したエラーは %s)</translation>
+    </message>
+    <message>
+        <source>Unable to generate initial keys</source>
+        <translation>初期キーを生成できません</translation>
+    </message>
+    <message>
+        <source>Verifying wallet(s)...</source>
+        <translation>ウォレットを確認しています...</translation>
+    </message>
+    <message>
+        <source>Wallet %s resides outside wallet directory %s</source>
+        <translation>ウォレット %s はウォレットディレクトリ %s の外にあります</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format on startup</source>
@@ -3717,6 +3884,10 @@
         <translation>非冗長モードで返却する生トランザクションやブロックの16進数表現のシリアライゼーションフォーマットを非 segwit (0) または segwit (1) のものに設定する (デフォルト: %d)</translation>
     </message>
     <message>
+        <source>Specify directory to hold wallets (default: &lt;datadir&gt;/wallets if it exists, otherwise &lt;datadir&gt;)</source>
+        <translation type="unfinished">ウォレットを保持するディレクトリを指定します（初期値:ディレクトリが存在する場合は &lt;datadir%gt;/wallets、それ以外の場合は &lt;datadir&gt;）。</translation>
+    </message>
+    <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Bloomフィルタによる、ブロックおよびトランザクションのフィルタリングを有効化する (初期値: %u)</translation>
     </message>
@@ -3758,7 +3929,7 @@
     </message>
     <message>
         <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
-        <translation>ホワイトリストとして登録するピアノ、接続元の IP アドレス (例: 1.2.3.4) または CIDR 表現のネットワーク (例: 1.2.3.0/24)。複数回指定することもできる</translation>
+        <translation>ホワイトリストとして登録するピアの、接続元の IP アドレス (例: 1.2.3.4) または CIDR 表現のネットワーク (例: 1.2.3.0/24)。複数回指定することもできる</translation>
     </message>
     <message>
         <source>%s is set very high!</source>
@@ -3790,7 +3961,7 @@
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>&lt;port&gt; で JSON-RPC 接続をリスン (初期値: %u、testnet は %u)</translation>
+        <translation>&lt;port&gt; で JSON-RPC 接続をリッスン (初期値: %u、testnet は %u)</translation>
     </message>
     <message>
         <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -3826,7 +3997,7 @@
     </message>
     <message>
         <source>Send transactions with full-RBF opt-in enabled (default: %u)</source>
-        <translation>full-RBF opt-in を利用してトランザクションを送信する (初期値: %u)</translation>
+        <translation>手数料置換(full-RBF)を利用してトランザクションを送信する (初期値: %u)</translation>
     </message>
     <message>
         <source>Set key pool size to &lt;n&gt; (default: %u)</source>
@@ -3882,7 +4053,7 @@
     </message>
     <message>
         <source>Transaction has too long of a mempool chain</source>
-        <translation>トランザクションのmempoolチェインが長過ぎます</translation>
+        <translation>トランザクションのmempoolチェーンが長過ぎます</translation>
     </message>
     <message>
         <source>Transaction must have at least one recipient</source>
@@ -3930,10 +4101,45 @@
     </message>
 </context>
 <context>
+    <name>RestoreDialog</name>
+    <message>
+        <source>Restore Wallet</source>
+        <translation type="unfinished">ウォレットの復元</translation>
+    </message>
+    <message>
+        <source>...</source>
+        <translation type="unfinished">参照</translation>
+    </message>
+    <message>
+        <source>Select wallet file to restore from</source>
+        <translation type="unfinished">復元するウォレットファイルを選択してください。</translation>
+    </message>
+    <message>
+        <source>Choose wallet restore option</source>
+        <translation type="unfinished">ウォレットを復元するオプションを選択してください。</translation>
+    </message>
+    <message>
+        <source>Reindex</source>
+        <translation type="unfinished">インデックスの再生成</translation>
+    </message>
+    <message>
+        <source>Salvage</source>
+        <translation type="unfinished">サルベージ</translation>
+    </message>
+    <message>
+        <source>The wallet.dat will be restored from the selected location and the Qt Wallet will be restarted with the -reindex or -salvagewallet option.</source>
+        <translation type="unfinished">選択した場所からwallet.datが復元され、-reindexまたは-salvagewalletオプションを使用してウォレットが再起動されます。</translation>
+    </message>
+    <message>
+        <source>&amp;Reset</source>
+        <translation type="unfinished">リセット(&amp;R)</translation>
+    </message>
+</context>
+<context>
     <name>CreateContract</name>
     <message>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォーム</translation>
     </message>
     <message>
         <source>Create Smart Contract</source>
@@ -3979,118 +4185,238 @@
         <source>Clear All</source>
         <translation type="unfinished">クリア</translation>
     </message>
+    <message>
+        <source>The bytecode of the contract</source>
+        <translation>コントラクトのバイトコード</translation>
+    </message>
+    <message>
+        <source>The vipstarcoin address that will be used to create the contract.</source>
+        <translation>コントラクトを作成するために使用されるビップスターコインアドレス。</translation>
+    </message>
+    <message>
+        <source>CreateContract</source>
+        <translation>コントラクト作成</translation>
+    </message>
+    <message>
+        <source>The Gas Price is too high, are you sure you want to possibly spend a max of %1 for this transaction?</source>
+        <translation>ガスの料金が高すぎます。この取引で最大 %1 を使いたいと思っていますか？</translation>
+    </message>
+    <message>
+        <source>High Gas price</source>
+        <translation>高いガスの料金</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to create contract? &lt;br /&gt;</source>
+        <translation>コントラクトを作成したいですか? &lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm contract creation.</source>
+        <translation>作成したコントラクトを確認します。</translation>
+    </message>
+    <message>
+        <source>Result %1</source>
+        <translation>リザルト %1</translation>
+    </message>
+    <message>
+        <source>Create contract</source>
+        <translation>コントラクト作成</translation>
+    </message>
+    <message>
+        <source>Gas limit. Default = %1, Max = %2</source>
+        <translation>ガスリミット。初期値 = %1、最大値 = %2</translation>
+    </message>
+    <message>
+        <source>Gas price: VIPS price per gas unit. Default = %1, Min = %2</source>
+        <translation>ガス価格: ガス単位当たりのVIPSの価格。初期値 = %1、最大値 = %2</translation>
+    </message>
 </context>
 <context>
     <name>SendToContract</name>
     <message>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォーム</translation>
     </message>
     <message>
         <source>Send to Smart Contract</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スマートコントラクト送信</translation>
     </message>
     <message>
         <source>Contract Address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">コントラクトアドレス</translation>
     </message>
     <message>
         <source>Interface (ABI)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">インターフェイス(ABI)</translation>
     </message>
     <message>
         <source>Choose from contract book page</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">前に使用したコントラクトから選ぶ</translation>
     </message>
     <message>
         <source>Paste contract address from clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">クリップボードからコントラクトアドレスを貼付け</translation>
     </message>
     <message>
         <source>Save contract info</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">コントラクト情報を保存</translation>
     </message>
     <message>
         <source>Function</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ファンクション(関数)</translation>
     </message>
     <message>
         <source>Sender Address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">送信者アドレス</translation>
     </message>
     <message>
         <source>Gas Limit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ガスリミット</translation>
     </message>
     <message>
         <source>Gas Price</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ガスの料金</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">数量</translation>
     </message>
     <message>
-        <source>Send To Contract</source>
-        <translation type="unfinished"></translation>
+        <source>SendToContract</source>
+        <translation type="unfinished">コントラクト送信</translation>
     </message>
     <message>
         <source>Clear All</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てクリア</translation>
+    </message>
+    <message>
+        <source>The contract address that will receive the funds and data.</source>
+        <translation>資金とデータを受け取るコントラクトアドレス。</translation>
+    </message>
+    <message>
+        <source>The amount in VIPS to send. Default = 0.</source>
+        <translation>送信するVIPSの量。初期値= 0</translation>
+    </message>
+    <message>
+        <source>The vipstarcoin address that will be used as sender.</source>
+        <translation>コントラクトを送信するために使用されるVIPSTARCOINアドレス。</translation>
+    </message>
+    <message>
+        <source>Send To Contract</source>
+        <translation>コントラクト送信</translation>
+    </message>
+    <message>
+        <source>The Gas Price is too high, are you sure you want to possibly spend a max of %1 for this transaction?</source>
+        <translation>ガスの料金が高すぎます。この取引で最大 %1 を使いたいと思っていますか？</translation>
+    </message>
+    <message>
+        <source>High Gas price</source>
+        <translation>高いガスの料金</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send to the contract: &lt;br /&gt;&lt;br /&gt;</source>
+        <translation>コントラクトを送信してもよろしいですか?: &lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;%1&lt;/b&gt;?</source>
+        <translation>&lt;b&gt;%1&lt;/b&gt;?</translation>
+    </message>
+    <message>
+        <source>Confirm sending to contract.</source>
+        <translation>送信したコントラクトを確認します。</translation>
+    </message>
+    <message>
+        <source>Result %1</source>
+        <translation>リザルト %1</translation>
+    </message>
+    <message>
+        <source>Send to ontract</source>
+        <translation>コントラクト送信</translation>
+    </message>
+    <message>
+        <source>Gas limit: Default = %1, Max = %2.</source>
+        <translation>ガスリミット。初期値 = %1、最大値 = %2</translation>
+    </message>
+    <message>
+        <source>Gas price: VIPS price per gas unit. Default = %1, Min = %2.</source>
+        <translation>ガス価格: ガス単位当たりのVIPSの価格。初期値 = %1、最大値 = %2</translation>
     </message>
 </context>
 <context>
     <name>CallContract</name>
     <message>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォーム</translation>
     </message>
     <message>
         <source>Call Smart Contract</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">スマートコントラクト呼出</translation>
     </message>
     <message>
         <source>Contract Address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">コントラクトアドレス</translation>
     </message>
     <message>
         <source>Interface (ABI)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">インターフェイス(ABI)</translation>
     </message>
     <message>
         <source>Choose from contract book page</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">前に使用したコントラクトから選ぶ</translation>
     </message>
     <message>
         <source>Paste contract address from clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">クリップボードからコントラクトアドレスを貼付</translation>
     </message>
     <message>
         <source>Save contract info</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">コントラクト情報を保存</translation>
     </message>
     <message>
         <source>Function</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ファンクション(関数)</translation>
     </message>
     <message>
         <source>Sender Address</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">送信者アドレス</translation>
     </message>
     <message>
-        <source>Call Contract</source>
-        <translation type="unfinished"></translation>
+        <source>CallContract</source>
+        <translation type="unfinished">コントラクト呼出</translation>
     </message>
     <message>
         <source>Clear All</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">全てクリア</translation>
+    </message>
+    <message>
+        <source>The account address.</source>
+        <translation>アカウントアドレス</translation>
+    </message>
+    <message>
+        <source>The sender address hex string.</source>
+        <translation>送信者アドレスの16進数文字列。</translation>
+    </message>
+    <message>
+        <source>The vipstarcoin address that will be used as sender.</source>
+        <translation>送信者として使用されるVIPSTARCOINアドレス。</translation>
+    </message>
+    <message>
+        <source>Call Contract</source>
+        <translation>コントラクト呼出</translation>
+    </message>
+    <message>
+        <source>Result %1</source>
+        <translation>リザルト %1</translation>
+    </message>
+    <message>
+        <source>Call contract</source>
+        <translation>コントラクト呼出</translation>
     </message>
 </context>
 <context>
     <name>SendTokenPage</name>
     <message>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォーム</translation>
     </message>
     <message>
         <source>PayTo</source>
@@ -4110,7 +4436,7 @@
     </message>
     <message>
         <source>Description</source>
-        <translation type="unfinished">Description</translation>
+        <translation type="unfinished">説明</translation>
     </message>
     <message>
         <source>Confirm</source>
@@ -4120,23 +4446,67 @@
         <source>Clear</source>
         <translation type="unfinished">クリア</translation>
     </message>
+    <message>
+        <source>The address that will receive the tokens.</source>
+        <translation>トークンを受け取るアドレス</translation>
+    </message>
+    <message>
+        <source>The amount in Token to send.</source>
+        <translation>送金するトークンの数量</translation>
+    </message>
+    <message>
+        <source>Optional description for transaction.</source>
+        <translation>トランザクションの説明(オプション)</translation>
+    </message>
+    <message>
+        <source>Gas limit: Default = %1, Max = %2.</source>
+        <translation>ガスリミット。初期値 = %1、最大値 = %2</translation>
+    </message>
+    <message>
+        <source>Gas price: VIPS price per gas unit. Default = %1, Min = %2.</source>
+        <translation>ガス価格: ガス単位当たりのVIPSの価格。初期値 = %1、最大値 = %2</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send? &lt;br /&gt;&lt;br /&gt;</source>
+        <translation>送信してもよろしいですか? &lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;%1 %2 &lt;/b&gt; to </source>
+        <translation>&lt;b&gt;%1 %2 &lt;/b&gt; から </translation>
+    </message>
+    <message>
+        <source>&lt;br /&gt;%3 &lt;br /&gt;</source>
+        <translation>&lt;br /&gt;%3 &lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm send token.</source>
+        <translation>送信したトークンを確認します。</translation>
+    </message>
+    <message>
+        <source>To send %1 you need VIPS on address &lt;br /&gt; %2.</source>
+        <translation>%1 を送信するには、アドレス %2 に&lt;br /&gt;VIPSが必要です。</translation>
+    </message>
+    <message>
+        <source>Send token</source>
+        <translation>トークンを送金</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveTokenPage</name>
     <message>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォーム</translation>
     </message>
     <message>
         <source>Copy Address</source>
-        <translation type="unfinished">アドレスをコピーする</translation>
+        <translation type="unfinished">アドレスをコピー</translation>
     </message>
 </context>
 <context>
     <name>AddTokenPage</name>
     <message>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">フォーム</translation>
     </message>
     <message>
         <source>Token Symbol</source>
@@ -4160,18 +4530,46 @@
     </message>
     <message>
         <source>Confirm</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">確認</translation>
     </message>
     <message>
         <source>Clear</source>
         <translation type="unfinished">クリア</translation>
+    </message>
+    <message>
+        <source>(This is your wallet address which will be tied to the token for send/receive oprations)</source>
+        <translation>(これは、トークンの送受信操作に結びつくウォレットアドレスです)</translation>
+    </message>
+    <message>
+        <source>The %1 address \"%2\" is not yours, please change it to new one.\n</source>
+        <translation>%1 アドレス \"%2\" はあなたのものではありません。新しいものに変更してください。\n</translation>
+    </message>
+    <message>
+        <source>Invalid token address</source>
+        <translation>無効なトークンアドレス</translation>
+    </message>
+    <message>
+        <source>Token exist</source>
+        <translation>トークンが既に存在します</translation>
+    </message>
+    <message>
+        <source>The token already exist with the specified contract and sender addresses.</source>
+        <translation>このトークンは指定されたコントラクトアドレスと送信者アドレスで既に存在します。</translation>
+    </message>
+    <message>
+        <source>Log events</source>
+        <translation>ログイベント</translation>
+    </message>
+    <message>
+        <source>Enable log events from the option menu in order to receive token transactions.</source>
+        <translation>トークントランザクションを受け取るために、オプションメニューからログイベントを有効化します。</translation>
     </message>
 </context>
 <context>
     <name>ContractResult</name>
     <message>
         <source>StackedWidget</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ステークウィジット</translation>
     </message>
     <message>
         <source>ContractAddress</source>
@@ -4179,11 +4577,11 @@
     </message>
     <message>
         <source>Hash160</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ハッシュ160</translation>
     </message>
     <message>
         <source>SenderAddress</source>
-        <translation type="unfinished">送り先アドレス</translation>
+        <translation type="unfinished">送信者アドレス</translation>
     </message>
     <message>
         <source>Transaction ID</source>
@@ -4191,11 +4589,396 @@
     </message>
     <message>
         <source>Function</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ファンクション (関数)</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">リザルト</translation>
+    </message>
+</context>
+<context>
+    <name>TokenTransactionView</name>
+    <message>
+        <source>All</source>
+        <translation>すべて</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>今日</translation>
+    </message>
+    <message>
+        <source>This week</source>
+        <translation>今週</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>今月</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>先月</translation>
+    </message>
+    <message>
+        <source>This year</source>
+        <translation>今年</translation>
+    </message>
+    <message>
+        <source>Range...</source>
+        <translation>期間...</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>着金</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>送金</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>自分自身</translation>
+    </message>
+    <message>
+        <source>Enter address to search</source>
+        <translation>検索するアドレスを入力</translation>
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>最小の額</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>アドレスをコピーする</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>総額のコピー</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>取引 ID をコピー</translation>
+    </message>
+    <message>
+        <source>Copy full transaction details</source>
+        <translation>トランザクションの詳細すべてをコピー</translation>
+    </message>
+    <message>
+        <source>Show transaction details</source>
+        <translation>取引の詳細を表示</translation>
+    </message>
+</context>
+<context>
+    <name>TokenTransactionTableModel</name>
+    <message>
+        <source>Date</source>
+        <translation>日付</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>タイプ</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>ラベル</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名前</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>数量(VIPS)</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>オフライン</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>未確認</translation>
+    </message>
+    <message>
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>確認中（%2 の推奨確認うち %1 の確認）</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>確認済み（%1 件の確認）</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>着金</translation>
+    </message>
+    <message>
+        <source>Received from</source>
+        <translation>着金</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>送金</translation>
+    </message>
+    <message>
+        <source>Payment to yourself</source>
+        <translation>自分自身への支払い</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(ラベル無し)</translation>
+    </message>
+    <message>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>トランザクションステータス。確認数を表示するには、このフィールドにカーソルを合わせます。</translation>
+    </message>
+    <message>
+        <source>Date and time that the transaction was received.</source>
+        <translation>トランザクションが受信された日時。</translation>
+    </message>
+    <message>
+        <source>Type of transaction.</source>
+        <translation>トランザクションタイプ</translation>
+    </message>
+    <message>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>トランザクションのユーザー定義のインテント/目的。</translation>
+    </message>
+    <message>
+        <source>Token name.</source>
+        <translation>トークン名</translation>
+    </message>
+    <message>
+        <source>Amount removed from or added to balance.</source>
+        <translation>残高から除外または追加された金額。</translation>
+    </message>
+</context>
+<context>
+    <name>ContractBookPage</name>
+    <message>
+        <source>Choose the contract for send/call</source>
+        <translation>送るもしくは呼び出すコントラクトを選択してください</translation>
+    </message>
+    <message>
+        <source>These are your saved contracts. Always check the contract address and the ABI before sending/calling.</source>
+        <translation>これは保存されたあなたのコントラクトです。送るもしくは呼び出す前に必ずコントラクトアドレスとABIを確認してください。</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>アドレスをコピー(&amp;A)</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Name</source>
+        <translation>名前をコピー(&amp;N)</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Interface</source>
+        <translation>インターフェイスをコピー(&amp;I)</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation>編集(&amp;E)</translation>
+    </message>
+    <message>
+        <source>&amp;Delete</source>
+        <translation>削除(&amp;D)</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete the address \"%1\" from your contract address list?</source>
+        <translation>コントラクトアドレスリストから \"%1\" を削除してもよろしいですか？</translation>
+    </message>
+    <message>
+        <source>Delete contact address</source>
+        <translation>コントラクトアドレスを削除</translation>
+    </message>
+    <message>
+        <source>Export Contract List</source>
+        <translation>コントラクトリストをエクスポート</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>テキスト CSV (*.csv)</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>ラベル</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>アドレス</translation>
+    </message>
+    <message>
+        <source>ABI</source>
+        <translation>ABI</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>エクスポートに失敗しました</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>%1 にアドレス一覧を保存しようとしてエラーが発生しました。もう一度お試しください。</translation>
+    </message>
+    <message>
+        <source>Form</source>
+        <translation>フォーム</translation>
+    </message>
+    <message>
+        <source>Create a new contract info</source>
+        <translation>コントラクト情報を新規作成する</translation>
+    </message>
+    <message>
+        <source>New</source>
+        <translation>新規作成</translation>
+    </message>
+    <message>
+        <source>Copy the currently selected contract address to the system clipboard</source>
+        <translation>現在選択しているコントラクトアドレスをコピー</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Delete the currently selected contract info from the list</source>
+        <translation>現在選択しているコントラクト情報を削除する</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>削除</translation>
+    </message>
+    <message>
+        <source>Export the data to a file</source>
+        <translation>データをファイルにエクスポート</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>エクスポート</translation>
+    </message>
+    <message>
+        <source>Choose</source>
+        <translation>選択</translation>
+    </message>
+</context>
+<context>
+    <name>EditContractInfoDialog</name>
+    <message>
+        <source>New contract info</source>
+        <translation>コントラクト情報を新規作成</translation>
+    </message>
+    <message>
+        <source>Edit contract info</source>
+        <translation>コントラクト情報を編集</translation>
+    </message>
+    <message>
+        <source>Dialog</source>
+        <translation>ダイアログ</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>ラベル</translation>
+    </message>
+    <message>
+        <source>Contract Address</source>
+        <translation>コントラクトアドレス</translation>
+    </message>
+    <message>
+        <source>Interface (ABI)</source>
+        <translation>インターフェイス(ABI)</translation>
+    </message>
+</context>
+<context>
+    <name>TokenTransactionDesc</name>
+    <message>
+        <source>conflicted with a transaction with %1 confirmations</source>
+        <translation>%1 検証のトランザクションと衝突</translation>
+    </message>
+    <message>
+        <source>%1/offline</source>
+        <translation>%1/オフライン</translation>
+    </message>
+    <message>
+        <source>0/unconfirmed, in memory pool</source>
+        <translation>0/未検証, メモリプール内</translation>
+    </message>
+    <message>
+        <source>0/unconfirmed, not in memory pool</source>
+        <translation>0/未検証, メモリプール外</translation>
+    </message>
+    <message>
+        <source>%1/unconfirmed</source>
+        <translation>%1/未検証</translation>
+    </message>
+    <message>
+        <source>%1 confirmations</source>
+        <translation>%1 確認</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>ステータス</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>日付</translation>
+    </message>
+    <message>
+        <source>Transaction ID</source>
+        <translation>取引ID</translation>
+    </message>
+    <message>
+        <source>Token Address</source>
+        <translation>トークンアドレス</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>送金元アドレス</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>送金先アドレス</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation>クレジット</translation>
+    </message>
+    <message>
+        <source>Debit</source>
+        <translation>引き落とし額</translation>
+    </message>
+    <message>
+        <source>Net Amount</source>
+        <translation>正味金額</translation>
+    </message>
+</context>
+<context>
+    <name>ContractTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>ラベル</translation>
+    </message>
+    <message>
+        <source>Contract Address</source>
+        <translation>コントラクトアドレス</translation>
+    </message>
+    <message>
+        <source>Interface (ABI)</source>
+        <translation>インターフェイス(ABI)</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(ラベル無し)</translation>
+    </message>
+</context>
+<context>
+    <name>QRCToken</name>
+    <message>
+        <source>Send</source>
+        <translation>送信</translation>
+    </message>
+    <message>
+        <source>Receive</source>
+        <translation>受信</translation>
+    </message>
+    <message>
+        <source>Add Token</source>
+        <translation>トークンを追加</translation>
     </message>
 </context>
 </TS>
