@@ -143,10 +143,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000001c03fa03fa"); // qtum
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000003f3a1e45d1da0b713be57"); // 413775
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x7a9fc529595c3f60b650e60f81d3ba2c2591e32bd811a056e0f889b544fbaa30"); //1017
+        consensus.defaultAssumeValid = uint256S("0x00000000000a318bfa940ffb8a4597b3fb44734065110cc0de1ee84b8265bb72"); // 413775
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -191,14 +191,14 @@ public:
             ( 0, uint256S("0000d068e1d30f79fb64446137106be9c6ee69a6a722295c131506b1ee09b77c"))
             ( 1000, uint256S("0000966ea0fed775d527fb31902270f01cafdfe53403be884080e2203bd43c74"))
             ( 244000, uint256S("0000000000261d023630c17c99b686bc251eca6e044c75191d83d7f35cff530d"))
+            ( 400000, uint256S("00000000005845c3019379551f73d16a71ebbf4307cae40b16caa3d36440462f"))
         };
 
         chainTxData = ChainTxData{
-            // Data as of block 7a9fc529595c3f60b650e60f81d3ba2c2591e32bd811a056e0f889b544fbaa30 (height 446482).
-            1522320640, // * UNIX timestamp of last known number of transactions
-            1017,  // * total number of transactions between genesis and that timestamp
-                        //   (the tx=... number in the SetBestChain debug.log lines)
-            0         // * estimated number of transactions per second after that timestamp
+            // Data from rpc: getchaintxstats (03df34411f2a5e4c057b1afea599a26370556c21328d3435505a2ba98b7163d4, height 413038).
+            /* nTime    */ 1548243888,
+            /* nTxCount */ 769819,
+            /* dTxRate  */ 0.03008501992807923
         };
         consensus.nMPoSRewardRecipients = 10;
         consensus.nFirstMPoSBlock = 1000 + consensus.nMPoSRewardRecipients + 
