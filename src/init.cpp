@@ -532,7 +532,7 @@ std::string LicenseInfo()
     const std::string URL_SOURCE_CODE = "<https://github.com/VIPSTARCOIN/VIPSTARCOIN>";
     const std::string URL_WEBSITE = "<http://www.vipstarcoin.jp/>";
 
-    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2018, COPYRIGHT_YEAR) + " ") + "\n" +
+    return CopyrightHolders("Copyright (C) %i-%i") + "\n" +
            "\n" +
            strprintf(_("Please contribute if you find %s useful. "
                        "Visit %s for further information about the software."),
