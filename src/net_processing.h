@@ -8,6 +8,7 @@
 
 #include "net.h"
 #include "validationinterface.h"
+#include "consensus/consensus.h"
 
 class CChainParams;
 
@@ -26,6 +27,13 @@ static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 40;
 void RegisterNodeSignals(CNodeSignals& nodeSignals);
 /** Unregister a network node */
 void UnregisterNodeSignals(CNodeSignals& nodeSignals);
+
+/** Default for -headerspamfilter, use header spam filter */
+static const bool DEFAULT_HEADER_SPAM_FILTER = true;
+/** Default for -headerspamfiltermaxsize, maximum size of the list of indexes in the header spam filter */
+static const unsigned int DEFAULT_HEADER_SPAM_FILTER_MAX_SIZE = COINBASE_MATURITY;
+/** Default for -headerspamfiltermaxavg, maximum average size of an index occurrence in the header spam filter */
+static const unsigned int DEFAULT_HEADER_SPAM_FILTER_MAX_AVG = 10;
 
 class PeerLogicValidation : public CValidationInterface {
 private:
